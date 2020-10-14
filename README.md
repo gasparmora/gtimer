@@ -1,5 +1,5 @@
 # gtimer
-(dirty) (REALLY dirty!) Timer (or stopwatch) based on ncurses
+(dirty) (REALLY dirty!) Timer (or stopwatch) based on ncurses to run in a terminal. Mainly to count 8h.
 
 Compile with:
 
