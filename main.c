@@ -134,6 +134,7 @@ int main(void)
 	unsigned int horas=0;
 	unsigned int minutos=0, segundos=0;
 	double work_time = 0;
+	double tiempo_restante = 0;
 
 	initscr();			     // Start curses mode 		
 	//raw();				     // Line buffering disabled. Exit with ctrl+c disabled as well
@@ -183,6 +184,30 @@ int main(void)
 		Print_DosPuntos(5,25);
 		Print_Number(minutos, 5,31);
 		Print_Number(segundos, 5,60);
+
+		// TODO. Now the timer is set to 8h (28,800 seconds) --> Get this from a parameter
+		if(!pausa) {
+			tiempo_restante = 28800 - (work_time+elapsed_time); // TODO Make it different from 8h (28800 seconds)
+		} else {
+			tiempo_restante = 28800 - work_time;
+		}
+		if(tiempo_restante<0) {
+			tiempo_restante=-tiempo_restante;
+			mvprintw(15,  84," ########## ");
+			mvprintw(15+1,84,"#          #");
+			mvprintw(15+2,84,"#   ^  ^   #");
+			mvprintw(15+3,84,"#          #");
+			mvprintw(15+4,84,"#   \\__/   #");
+			mvprintw(15+5,84," ########## ");
+			mvprintw(15+6,84,"  ALL DONE! ");
+		}
+		horas = (tiempo_restante) / 3600;
+		minutos = ( (tiempo_restante) - horas*3600 ) / 60;
+		segundos = ((tiempo_restante) - (horas*3600) - (minutos*60));
+		Print_Number(horas, 15,5);
+		Print_DosPuntos(15,25);
+		Print_Number(minutos, 15,31);
+		Print_Number(segundos, 15,60);
 
 		refresh();
 
