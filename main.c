@@ -14,85 +14,85 @@ void Print_Digit(unsigned int value, unsigned int y, unsigned int x)
 {
 	assert(value<10);
 	if(value==0) {
-		mvprintw(y,   x,"  *****  ");
-		mvprintw(y+1, x," **   ** ");
-		mvprintw(y+2, x," **   ** ");
-		mvprintw(y+3, x," **   ** ");
-		mvprintw(y+4, x," **   ** ");
-		mvprintw(y+5, x," **   ** ");
-		mvprintw(y+6, x,"  *****  ");
+		mvprintw(y,   x,"  #####  ");
+		mvprintw(y+1, x," ##   ## ");
+		mvprintw(y+2, x," ##   ## ");
+		mvprintw(y+3, x," ##   ## ");
+		mvprintw(y+4, x," ##   ## ");
+		mvprintw(y+5, x," ##   ## ");
+		mvprintw(y+6, x,"  #####  ");
 	} else if(value==1) {
-		mvprintw(y,   x,"    **   ");
-		mvprintw(y+1, x,"   ***   ");
-		mvprintw(y+2, x,"  ****   ");
-		mvprintw(y+3, x," ** **   ");
-		mvprintw(y+4, x,"    **   ");
-		mvprintw(y+5, x,"    **   ");
-		mvprintw(y+6, x," ******* ");
+		mvprintw(y,   x,"    ##   ");
+		mvprintw(y+1, x,"   ###   ");
+		mvprintw(y+2, x,"  ####   ");
+		mvprintw(y+3, x," ## ##   ");
+		mvprintw(y+4, x,"    ##   ");
+		mvprintw(y+5, x,"    ##   ");
+		mvprintw(y+6, x," ####### ");
 	} else if(value==2) {
-		mvprintw(y,   x,"   ****  ");
-		mvprintw(y+1, x,"  **  ** ");
-		mvprintw(y+2, x," **   ** ");
-		mvprintw(y+3, x,"     **  ");
-		mvprintw(y+4, x,"    **   ");
-		mvprintw(y+5, x,"  **     ");
-		mvprintw(y+6, x," ******* ");
+		mvprintw(y,   x,"   ####  ");
+		mvprintw(y+1, x,"  ##  ## ");
+		mvprintw(y+2, x," ##   ## ");
+		mvprintw(y+3, x,"     ##  ");
+		mvprintw(y+4, x,"    ##   ");
+		mvprintw(y+5, x,"  ##     ");
+		mvprintw(y+6, x," ####### ");
 	} else if(value==3) {
-		mvprintw(y,   x,"  ****   ");
-		mvprintw(y+1, x," *   **  ");
-		mvprintw(y+2, x,"    **   ");
-		mvprintw(y+3, x,"  **     ");
-		mvprintw(y+4, x,"    **   ");
-		mvprintw(y+5, x,"      ** ");
-		mvprintw(y+6, x," ******  ");
+		mvprintw(y,   x,"  ####   ");
+		mvprintw(y+1, x," #   ##  ");
+		mvprintw(y+2, x,"    ##   ");
+		mvprintw(y+3, x,"  ##     ");
+		mvprintw(y+4, x,"    ##   ");
+		mvprintw(y+5, x,"      ## ");
+		mvprintw(y+6, x," ######  ");
 	} else if(value==4) {
-		mvprintw(y,   x,"     **  ");
-		mvprintw(y+1, x,"   ****  ");
-		mvprintw(y+2, x," **  **  ");
-		mvprintw(y+3, x,"******** ");
-		mvprintw(y+4, x,"     **  ");
-		mvprintw(y+5, x,"     **  ");
-		mvprintw(y+6, x,"    **** ");
+		mvprintw(y,   x,"     ##  ");
+		mvprintw(y+1, x,"   ####  ");
+		mvprintw(y+2, x," ##  ##  ");
+		mvprintw(y+3, x,"######## ");
+		mvprintw(y+4, x,"     ##  ");
+		mvprintw(y+5, x,"     ##  ");
+		mvprintw(y+6, x,"    #### ");
 	} else if(value==5) {
-		mvprintw(y,   x," ******  ");
-		mvprintw(y+1, x," **      ");
-		mvprintw(y+2, x," ***     ");
-		mvprintw(y+3, x,"   ****  ");
-		mvprintw(y+4, x,"     **  ");
-		mvprintw(y+5, x,"     **  ");
-		mvprintw(y+6, x," *****   ");
+		mvprintw(y,   x," ######  ");
+		mvprintw(y+1, x," ##      ");
+		mvprintw(y+2, x," ###     ");
+		mvprintw(y+3, x,"   ####  ");
+		mvprintw(y+4, x,"     ##  ");
+		mvprintw(y+5, x,"     ##  ");
+		mvprintw(y+6, x," #####   ");
 	} else if(value==6) {
-		mvprintw(y,   x,"    **** ");
-		mvprintw(y+1, x,"  **     ");
-		mvprintw(y+2, x," **      ");
-		mvprintw(y+3, x," *****   ");
-		mvprintw(y+4, x," **   *  ");
-		mvprintw(y+5, x," **   *  ");
-		mvprintw(y+6, x,"  *****  ");
+		mvprintw(y,   x,"    #### ");
+		mvprintw(y+1, x,"  ##     ");
+		mvprintw(y+2, x," ##      ");
+		mvprintw(y+3, x," #####   ");
+		mvprintw(y+4, x," ##   #  ");
+		mvprintw(y+5, x," ##   #  ");
+		mvprintw(y+6, x,"  #####  ");
 	} else if(value==7) {
-		mvprintw(y,   x," ******* ");
-		mvprintw(y+1, x,"      ** ");
-		mvprintw(y+2, x,"     **  ");
-		mvprintw(y+3, x,"    **   ");
-		mvprintw(y+4, x,"   **    ");
-		mvprintw(y+5, x,"   **    ");
-		mvprintw(y+6, x,"   **    ");
+		mvprintw(y,   x," ####### ");
+		mvprintw(y+1, x,"      ## ");
+		mvprintw(y+2, x,"     ##  ");
+		mvprintw(y+3, x,"    ##   ");
+		mvprintw(y+4, x,"   ##    ");
+		mvprintw(y+5, x,"   ##    ");
+		mvprintw(y+6, x,"   ##    ");
 	} else if(value==8) {
-		mvprintw(y,   x,"  *****  ");
-		mvprintw(y+1, x," **   ** ");
-		mvprintw(y+2, x,"  ** **  ");
-		mvprintw(y+3, x,"  *****  ");
-		mvprintw(y+4, x," **   ** ");
-		mvprintw(y+5, x," **   ** ");
-		mvprintw(y+6, x,"  *****  ");
+		mvprintw(y,   x,"  #####  ");
+		mvprintw(y+1, x," ##   ## ");
+		mvprintw(y+2, x,"  ## ##  ");
+		mvprintw(y+3, x,"  #####  ");
+		mvprintw(y+4, x," ##   ## ");
+		mvprintw(y+5, x," ##   ## ");
+		mvprintw(y+6, x,"  #####  ");
 	} else if(value==9) {
-		mvprintw(y,   x,"  *****  ");
-		mvprintw(y+1, x," **   ** ");
-		mvprintw(y+2, x," **   ** ");
-		mvprintw(y+3, x,"  ****** ");
-		mvprintw(y+4, x,"     **  ");
-		mvprintw(y+5, x,"    **   ");
-		mvprintw(y+6, x,"  ***    ");
+		mvprintw(y,   x,"  #####  ");
+		mvprintw(y+1, x," ##   ## ");
+		mvprintw(y+2, x," ##   ## ");
+		mvprintw(y+3, x,"  ###### ");
+		mvprintw(y+4, x,"     ##  ");
+		mvprintw(y+5, x,"    ##   ");
+		mvprintw(y+6, x,"  ###    ");
 	}
 }
 
